@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Appointment</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+button{
+	width:50%;
+	height:40px;
+	color:white;
+	background:grey;
+	border-color:grey;
+	margin-left:100px;
+	cursor:pointer;
+}
+
+
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pic/hair17.jpeg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.app-container{
+    grid-template-columns: 720px 620px;
+    grid-template-rows: 720px 620px;
+	display:grid;
+	height:900px;
+	width:900px;
+}
+
+
+
+.app-img{
+    background: url("pic/hair17.jpeg") center/cover no-repeat;
+	height:920px;
+}
+
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.app-content{
+    background: #fff;
+    height:920px;
+}
+
+.app-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.form-row{
+    display: grid;
+    width: 100%;
+    margin-left: 100px;
+}
+
+form select, form input, .form-control{
+    width: 50%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color:grey;
+    background:black;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+
+form h2{
+color: black;
+text-align:center;
+margin-top:20px;}
+
+label{
+color:black;
+}
+
+</style>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="home.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="mb-0 text-primary text-uppercase"><img src="pic/logo2.png" height="100px"></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="home.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="hair.html" class="nav-item nav-link">Hair Care</a>
+                <a href="beauty.html" class="nav-item nav-link">Beauty Care</a>
+               <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                        <a href="team.html" class="dropdown-item active">Our Barber</a>
+                        <a href="open.html" class="dropdown-item">Working Hours</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div> -->
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="book.html" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block active">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white text-uppercase mb-3 animated slideInDown">Book Appointment</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="home.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="about.html">About</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="contact.html">Contact</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Appointment</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+   
+   <!-- form -->
+  <!--  <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <img class="img-fluid h-100" src="img/open.jpg" alt="">
+                    </div>
+                </div>-->
+     
+    			<section class = "banner">
+        <div class="container">
+				
+				<div class = "app-container">
+					<div class ="app-img">
+						<!-- image here -->
+					</div>
+
+					<div class = "app-content">
+							<form method="post" action="book.jsp"><h2>Book Your Appointment</h2>
+								<div class = "form-row">
+									<label for="name">Name</label>
+									<input type = "text" name=name placeholder="Full Name">
+									<label for="number">Phone Nmuber</label>
+									<input type = "text" name=pnumber placeholder="Phone Number">
+								</div>
+								
+								<div class ="form-row">
+									<label for="Date">When Would You Like To come:</label>
+									<input class="form-control" name=date type="date" placeholder="Date">
+									<label for="Date">What Hour Is Suitable:</label>
+									<input class="form-control" name=time type="time" placeholder="Hours">
+								</div>
+								
+								<div class ="form-row">
+										<label for="gender">Gender:</label>
+										  <select id="gender" name=gender name="gender">
+											<option checked>Select</option>
+											<option value="male">Male</option>
+											<option value="female">Female</option>
+											<option value="other">Other</option>
+										  </select>
+								</div>
+								<div class="form-row">
+										<label for="email">Email:</label>
+										<input type="email" name=email placeholder="Email" name="email">
+								</div>
+
+								<div class="form-row">
+										<label for="description">Services For:</label>
+										  <select id="services" name=services name="services">
+											<option checked>Select</option>
+											<option value="Hair Care">Hair Care</option>
+											<option value="Hair Spa">Hair Spa</option>
+											<option value="Hair Treatment">Hair Treatment</option>
+											<option value="Hair Cutting">Hair Cutting</option>
+											<option value="Hair Styling ">Hair Styling</option>
+											<option value="Hair Wash">Hair Wash</option>
+											<option value="bridal Make-up">Bridal Make-Up</option>
+											<option value="Engagement Make-Up">Engagement Make-Up</option>
+											<option value="Reception Make-Up">Reception Make-Up</option>
+											<option value="Complete Skin Care">Complete Skin Care</option>
+											<option value="Body Massage">Body Massage</option>
+											<option value="Head Massage">Head Massage</option>
+											<option value="Pedicure & Manicure">Pedicure & Manicure</option>
+											<option value="Threading">Threading</option>
+											<option value="Facials">Facials</option>
+											<option value="Waxing">Waxing</option>
+										  </select>
+										
+								</div>
+    
+  								
+								<div class = "form-row">
+									<a href=""><input type="submit" onclick="pop()" value="Submit"></a>
+									<input type="reset" value="Reset">
+								</div>
+                    
+							</form>
+					
+					</div>
+				</div>
+				
+				</div>
+				</section>
+				<script>
+function pop(){
+	alert("booking done :)");
+}
+</script>
+        <!--
+            </div>
+        </div>
+    </div>-->
+    <!-- form -->
+
+   <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Get In Touch</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-map-marker-alt text-primary"></span>
+                        </div>
+                        <span>123 Street, Chandigarh, INDIA</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt text-primary"></span>
+                        </div>
+                        <span>92 345 67890</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open text-primary"></span>
+                        </div>
+                        <span>infobeautybar@gamil.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Newsletter</h4>
+                    <div class="position-relative mb-4">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                    </div>
+                    <div class="d-flex pt-1 m-n1">
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">The beauty Bar</a>, All Right Reserved.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

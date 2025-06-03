@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Beauty</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+.img-fluids{
+	width: 100%;
+    height: 300px;}
+	
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+}	
+
+section{
+    display: block;
+	padding:0;
+	border:0;
+	outline:0;
+}
+
+
+.hair__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	
+	}
+
+div{
+margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.hair__card {
+    overflow: hidden;
+    border-radius: 500px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hair__card__image {
+    isolation: isolate;
+}
+
+.hair__card__details {
+    padding: 3rem;
+	text-align: center;
+}
+
+.hair__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.hair__card h5 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.hair__card p {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.bttn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: Black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+	
+button:not(:disabled) {
+    cursor: pointer;
+}	
+</style>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="home.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="mb-0 text-primary text-uppercase"><img src="pic/logo2.png" height="100px"></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="home.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="hair.html" class="nav-item nav-link">Hair Care</a>
+                <a href="beauty.html" class="nav-item nav-link active">Beauty Care</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="book.html" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white text-uppercase mb-3 animated slideInDown">Beauty Care</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="home.html">Home</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Beauty Care</li>
+                    <li class="breadcrumb-item">Hair Care</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Team Start -->
+ <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Make-Up Artists</p>
+                <h1 class="text-uppercase">Meet Our Head Make-Up Artists</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluids" src="pic/hair4.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Jasmine Kaur</h5>
+                            <span class="text-primary">Make-up Artist</span>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div>
+                            <p><b><br>Jasmine Kaur is an Indain make-up artist from Punjab.
+							<br> She has been called the most influential make-up artist in the world by 
+							Vogue magazine and other commentators.
+							In 2019 she was included in Time's 100 most influential people list.<br> Currently, she is the head of the beauty
+							department of our The Beauty Bar Salon .</b> </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluids" src="pic/hair25.jpeg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Mario Dedivanovic</h5>
+                            <span class="text-primary">Make-Up Artist</span>
+                        </div>
+                    </div>
+                </div>
+                
+               <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div>
+                            <p><b><br>Mario Dedivanovic is a British make-up artist. 
+							<br> He is one of the most iconic MUAs in the industry. 
+							His client roster has included the likes of Queen Latifah, Tyra Banks, 
+							Iman, and Naomi Campbell<br> Currently, he is the head of the supervisor
+							department of our The Beauty Bar Salon .</b> </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+			
+			<p>
+			<div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluids" src="pic/hair24.jpeg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Priya Tiwari</h5>
+                            <span class="text-primary">Make-up Artist</span>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div>
+                            <p><b><br>Priya Tiwari is an Indain make-up artist from Assam, 
+							Illinois.<br> An author, and YouTuber, her professional career 
+							began when she was booked by Elle magazine to work with model Cindy Crawford.<br> 
+							Currently, she is the team leader of the beauty 
+							department of our The Beauty Bar Salon .</b> </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluids" src="pic/hair23.jpeg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Smriti Irani</h5>
+                            <span class="text-primary">Make-Up Artist</span>
+                        </div>
+                    </div>
+                </div>
+                
+               <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div>
+                            <p><b><br>Smriti Irani is an Indain film special make-up effects artist from Chandigarh. 
+							<br> , best known for 
+							her work in the Terminator series, the first three Jurassic Park films, Aliens, The Thing, the first two Predator films, 
+							Inspector Gadget, Iron Man, and Edward Scissorhands. 
+							She won four Academy Awards for her work..<br> Currently, she is the vice-head of the beauty 
+							department of our The Beauty Bar Salon .</b> </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Team End -->
+<br><br><br><br><br>
+<section class="section__container hair__container">
+			<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Services</p>
+                <h1 class="text-uppercase">Bridal Make-Up</h1>
+            </div>
+      <div class="hair__grid">
+        <div class="hair__card">
+          <div class="hair__card__image">
+	           <img src="pic/bb1.webp" height="240px"  width="500px" alt="hair" />
+          </div>
+          <div class="hair__card__details">
+            <h4>Bridal Make-Up</h4>
+            <p>
+             Who does not want to look the best 
+			 perhaps on the most important day of your life – 
+			 your wedding?.We understand how the bride wants to 
+			 be on the most important event of her life. 
+			 Tailored according to the needs of the bride-to-be, our bridal 
+			 makeup lends a class apart look.
+			</p><a href="book.html"><button class="bttn">Book Appointment</button></a>
+          </div>
+        </div>
+		
+        <div class="hair__card">
+          <div class="hair__card__image">
+            <img src="pic/bb2.jpg" height="240px"  width="500px" alt="hair" />
+          </div>
+          <div class="hair__card__details">
+            <h4>Engaement Make-Up</h4>
+            <p>
+			Haven’t you yet decided the make-up you 
+			would opt for? Well, we can come to your rescue. 
+			Engagement is the first step towards sharing a bond 
+			which lasts forever; hence you should look charming,
+			elegant and attractive. We offer different types of 
+			engagement makeup so that you can choose the best 
+			accordingly.
+
+
+			</p>
+            <a href="book.html"><button class="bttn">Book Appointment</button></a>
+          </div>
+        </div>
+		
+        <div class="hair__card">
+          <div class="hair__card__image">
+            <img src="pic/bb3.jpg" height="240px"  width="500px" alt="hair" />
+          </div>
+          <div class="hair__card__details">
+            <h4>Reception Make-Up</h4>
+            <p>
+            Reception makeup can make a world of 
+			difference to your overall look and personality. 
+			<br>For a bride, it is the day when she is introduced to 
+			friends and relatives. <br>Our professional make-up 
+			artists make sure you 
+			look at your best on this special day.
+			</p>
+			<a href="book.html"><button class="bttn">Book Appointment</button></a>
+          </div>
+        </div>
+		
+      </div>
+    </section>
+	
+	<section class="section__container hair__container">
+			<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <br><br><h1 class="text-uppercase">Skin Care</h1>
+            </div>
+			<div class="hair__grid">
+        <div class="hair__card">
+          <div class="hair__card__image">
+	           <img src="pic/bb4.jpg" height="240px"  width="500px" alt="hair" />
+          </div>
+          <div class="hair__card__details">
+            <h4>Facials</h4>
+            <p>
+             
+When it comes to facials, when done regularly, 
+it can make a world of difference to your quality 
+of skin and texture. It prevents appearance of early 
+signs of ageing. All our facial products leave your 
+skin radiant, 
+flawless, supple, healthy and toned.</p><br>
+			<a href="book.html"><button class="bttn">Book Appointment</button></a>
+          </div>
+        </div>
+		
+        <div class="hair__card">
+          <div class="hair__card__image">
+            <img src="pic/bb5.webp" height="240px"  width="500px" alt="hair" />
+          </div>
+          <div class="hair__card__details">
+            <h4>Waxing </h4>
+            <p>
+			Long gone are the times of painful waxing as 
+today you have plenty of wax options to get rid of 
+unwanted hair from your body. From regular wax to chocolate and oil wax, there are options available for you. Our experts make sure you feel the least 
+pain and discomfort while waxing.</p>
+			<a href="book.html"><button class="bttn">Book Appointment</button></a>
+          </div>
+        </div>
+		
+        <div class="hair__card">
+          <div class="hair__card__image">
+            <img src="pic/bb6.jpg" height="240px"  width="500px" alt="hair" />
+          </div>
+          <div class="hair__card__details">
+            <h4>Pedicure and Manicure</h4>
+            <p>
+           Pamper yourself by indulging in manicure and 
+pedicure. Professionals at our salon make sure that 
+the results of these two services leave your hands and feet smooth and clean. There are several branded products from which you can pick the one 
+as per your preference and budget.</p>
+		<a href="book.html"><button class="bttn">Book Appointment</button></a>
+          </div>
+        </div>
+		
+      </div>
+    </section>
+	
+	<section class="section__container hair__container">
+			
+			<div class="hair__grid">
+        <div class="hair__card">
+          <div class="hair__card__image">
+	           <img src="pic/bb7.jpg" height="240px"  width="500px" alt="hair" />
+          </div>
+          <div class="hair__card__details">
+            <h4>Threading</h4>
+            <p>
+Unwanted facial hair growth can be 
+the reason for embarrassment. 
+Threading is one of the most common methods 
+of getting rid of excess eyebrows hair. Women from all 
+walks of life and across all age groups opt for this service.
+</p>
+			<a href="book.html"><button class="bttn">Book Appointment</button></a>
+          </div>
+        </div>
+		
+        <div class="hair__card">
+          <div class="hair__card__image">
+            <img src="pic/bb9.jpg" height="240px"  width="500px" alt="hair" />
+          </div>
+          <div class="hair__card__details">
+            <h4>Head Massage </h4>
+            <p>
+Hair care is important for all and sundry. 
+Pollution, exposure to sun and hair care products often 
+leaves your hair and scalp dry. A head massage is the best answer to feel relaxed while 
+improving the quality of hair.</p><br>
+			<a href="book.html"><button class="bttn">Book Appointment</button></a>
+          </div>
+        </div>
+		
+        <div class="hair__card">
+          <div class="hair__card__image">
+            <img src="pic/bb8.png" height="240px"  width="500px" alt="hair" />
+          </div>
+          <div class="hair__card__details">
+            <h4>Body Massage</h4>
+            <p>          
+In the present times of hectic and packed work schedule, 
+stress often takes toll on life. The best way to relax and rejuvenate mind and body is to spare out a few minutes 
+and enjoy the benefits of body massage.</p><br>
+		<a href="book.html"><button class="bttn">Book Appointment</button></a>
+          </div>
+        </div>
+		
+      </div>
+    </section>
+
+ <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Get In Touch</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-map-marker-alt text-primary"></span>
+                        </div>
+                        <span>123 Street, Chandigarh, INDIA</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt text-primary"></span>
+                        </div>
+                        <span>92 345 67890</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open text-primary"></span>
+                        </div>
+                        <span>infobeautybar@gamil.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Newsletter</h4>
+                    <div class="position-relative mb-4">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                    </div>
+                    <div class="d-flex pt-1 m-n1">
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">The beauty Bar</a>, All Right Reserved.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
